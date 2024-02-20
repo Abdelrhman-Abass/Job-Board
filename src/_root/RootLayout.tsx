@@ -1,9 +1,11 @@
-import React from 'react'
+import TopBar from '@/components/TopBar'
+// import Exper from '@/components/Exper'
 
 function RootLayout() {
   return (
-    <div>
-      
+    <div className='w-full'>
+      <TopBar />
+
     </div>
   )
 }
