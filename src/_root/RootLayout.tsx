@@ -1,11 +1,14 @@
 import TopBar from '@/components/TopBar'
-// import Exper from '@/components/Exper'
+import { Outlet } from 'react-router-dom'
 
 function RootLayout() {
   return (
     <div className='w-full'>
       <TopBar />
-
+      
+      <section>
+        <Outlet />
+      </section>
     </div>
   )
 }

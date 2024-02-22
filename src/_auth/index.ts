@@ -1,9 +1,9 @@
 import AuthLayout from "./AuthLayout";
-import LoginFrom from "./forms/LoginFrom";
-import SignupFrom from "./forms/SignupFrom";
+import LoginForm from "./forms/LoginForm";
+import SigninForm from "./forms/SigninForm";
 
 export{
     AuthLayout,
-    SigninFrom,
-    LoginFrom,
+    SigninForm,
+    LoginForm,
 }
