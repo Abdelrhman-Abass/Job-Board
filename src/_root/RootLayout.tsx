@@ -1,4 +1,4 @@
-import TopBar from '@/components/TopBar'
+import { TopBar ,Footer} from '@/components'
 import { Outlet } from 'react-router-dom'
 
 function RootLayout() {
@@ -9,6 +9,8 @@ function RootLayout() {
       <section>
         <Outlet />
       </section>
+
+      <Footer />
     </div>
   )
 }

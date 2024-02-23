@@ -10,7 +10,7 @@ import { useAos } from '@/hooks/useAos';
 
 
 const JobCard: FC = () => {
-  const [jobs, setJobs] = useState<Job[]>([]); 
+  const [jobs, setJobs] = useState<Job[]>(); 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,6 +21,7 @@ const JobCard: FC = () => {
         console.error('Error fetching data:', error);
       }
     };
+    console.log(jobs)
 
     fetchData();
   }, []);
@@ -28,7 +29,7 @@ const JobCard: FC = () => {
 
 
   return (
-    <div className='grid grid-cols-1 gap-10 md:grid-cols-2' data-aos="zoom-in-up">
+    <div className='grid grid-cols-1 gap-10 lg:grid-cols-2' data-aos="zoom-in-up">
       { jobs ?(
         jobs.map((job) => (
             <div key={job._id} data-aos="zoom-in-up" className='rounded-[37px] bg-gradient-to-r from-[#f9f7f7] to-[#f7f1f1] shadow-inner sm:shadow-2xl -translate-x-4 -translate-y-4 sm:translate-x-0 sm:translate-y-0 p-10 group'>

@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import HomeHeader from "./HomeHeader";
 import JobCard from "./JobCard";
 import SearchForm from "./SearchForm";
@@ -9,4 +10,5 @@ export {
     JobCard,
     SearchForm,
     TopBar,
+    Footer,
 }

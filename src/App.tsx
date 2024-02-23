@@ -1,6 +1,6 @@
 import { Routes  , Route } from "react-router-dom"
 
-import { AuthLayout, LoginForm, SigninForm } from "./_auth"
+import { AuthLayout, SignupForm, SigninForm } from "./_auth"
 import RootLayout from "./_root/RootLayout"
 import Home from "./_root/pages/Home"
 
@@ -13,7 +13,7 @@ function App() {
 
         <Route element={<AuthLayout />}>
           <Route path="sign-in" element= {<SigninForm />}/>
-          <Route path="login" element= {<LoginForm />}/>
+          <Route path="sign-up" element= {<SignupForm />}/>
         </Route>
 
 
